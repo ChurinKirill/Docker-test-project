@@ -1,0 +1,23 @@
+<!-- 
+    Параметры:
+        user_text,
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Hello, world!</h1>
+        <p>Отправьте мне текст - я отображу его здесь!</p>
+        <form action="/" method="post">
+            <div style="display: flex; flex-direction: row;">
+                <input type="text" name="user_text">
+                <button type="submit">Отправить!</button>
+            </div>
+        </form>
+        <div>
+            <p>Вы написали:</p>
+            <p>{{ user_text }}</p>
+        </div>
+    </body>
+</html>
